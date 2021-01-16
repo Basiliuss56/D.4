@@ -1,0 +1,12 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+New
+{% endblock title %}
+
+{% block content %}
+<h1>{{ new.header}}</h1>
+{{ new.created_time|date:"d-m-Y H:i" }}
+<hr>
+{{ new.text}}
+{% endblock content %}
